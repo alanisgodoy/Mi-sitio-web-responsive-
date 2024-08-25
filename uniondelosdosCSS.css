@@ -1,0 +1,193 @@
+/* Importa las fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georgia&display=swap');
+
+html {
+    scroll-behavior: smooth; /* Habilita el desplazamiento suave */
+    font-size: 100%; /* Base de 100% para que los tamaños relativos funcionen bien */
+}
+
+body {
+    margin: 2px; /* O la unidad que prefieras */
+    padding: 2px; /* O la unidad que prefieras */
+    background-image: url(fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Georgia', serif;
+    font-size: 1rem; /* Tamaño de fuente base para el cuerpo del texto */
+}
+
+h1 {
+    color: #410558; /* Cambia esto al color que prefieras */
+    text-align: center;
+    padding: 2vw; /* Usa vw para un padding proporcional a la pantalla */
+    background: hsla(290, 79%, 44%, 0.404); /* Fondo semi-transparente */
+    margin: 0 auto;
+    font-family: 'Old Standard TT', serif; /* Aplica la fuente Old Standard TT */
+    font-size: clamp(2rem, 4vw, 4rem); /* Tamaño de fuente adaptable entre 2rem y 4rem */
+}
+
+h2 {
+    font-family: 'Bungee', cursive; /* Nueva fuente */
+    font-size: clamp(1.5rem, 3.5vw, 2.5rem); /* Tamaño de fuente adaptable entre 1.5rem y 2.5rem */
+    color: #FFFFFF;
+    background: hsla(290, 79%, 44%, 0.404);
+    padding: 1.5vw; /* Usa vw para un padding proporcional a la pantalla */
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si es necesario */
+    align-items: flex-start;
+    gap: 2vw; /* Ajusta el espacio entre la imagen y el texto según tu preferencia */
+    font-size: clamp(1rem, 2vw, 1.4rem); /* Tamaño de texto adaptable entre 1rem y 1.4rem */
+}
+
+.about-img {
+    max-width: 30vw; /* Ajusta el tamaño de la imagen según el ancho de la pantalla */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Opcional: agrega bordes redondeados */
+}
+
+p {
+    font-family: 'Georgia', serif; /* Aplica la fuente Georgia para los párrafos */
+    color: #0e0e0e; /* Color del texto */
+    background: rgba(0, 0, 0, 0); /* Fondo semi-transparente para el texto */
+    padding: 2vw; /* Usa vw para un padding proporcional a la pantalla */
+    border-radius: 5px;
+    font-size: clamp(1rem, 2vw, 1.4rem); /* Tamaño de texto adaptable entre 1rem y 1.4rem */
+    line-height: 1.6; /* Ajusta el interlineado para mejorar la legibilidad */
+}
+
+nav {
+    background-color: #a168a8;
+    color: #fff;
+    text-align: center;
+    padding: 1.5vw; /* Usa vw para un padding proporcional a la pantalla */
+}
+
+nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si es necesario */
+}
+
+nav li {
+    margin: 0 2vw; /* Usa vw para margen proporcional */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1.5vw;
+    font-size: clamp(1rem, 2vw, 1.4rem); /* Tamaño de fuente adaptable entre 1rem y 1.4rem */
+}
+
+nav a:hover {
+    background-color: #d69bd663;
+    border-radius: 5px;
+}
+
+section {
+    padding: 2vw; /* Usa vw para un padding proporcional a la pantalla */
+    margin: 2vw; /* Usa vw para un margen proporcional */
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    font-size: clamp(1rem, 2vw, 1.4rem); /* Ajusta el tamaño del texto entre 1rem y 1.4rem */
+}
+
+button#inicio-btn {
+    position: fixed;
+    bottom: 2vw;
+    right: 2vw;
+    padding: 2vw;
+    background-color: #a168a8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.3rem; /* Ajusta el tamaño del texto */
+}
+
+button#inicio-btn:hover {
+    background-color: #d69bd6;
+}
+
+/* Estilos para la sección "Sobre Mí" */
+.about-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si es necesario */
+    align-items: center;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    gap: 2vw; /* Ajusta el espacio entre la imagen y el texto */
+}
+
+.about-container img {
+    max-width: 30vw; /* Ajusta el tamaño para pantallas grandes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 50%; /* Esto es opcional, solo si quieres la imagen redonda */
+}
+
+.about-container p {
+    flex: 1;
+    font-size: clamp(1rem, 2vw, 1.4rem); /* Tamaño de texto adaptable entre 1rem y 1.4rem */
+    margin: 2vw; /* Ajusta el margen para espaciado */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+    h1 {
+        font-size: clamp(2.5rem, 5vw, 4rem); /* Tamaño de fuente adaptable entre 2.5rem y 4rem */
+        padding: 3vw;
+    }
+
+    h2 {
+        font-size: clamp(1.5rem, 3vw, 2rem); /* Tamaño de fuente adaptable entre 1.5rem y 2rem */
+        padding: 2vw;
+    }
+
+    .about-container {
+        display: block;
+        text-align: center;
+    }
+
+    .about-container img {
+        width: 50vw; /* Ajusta el tamaño para pantallas pequeñas */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    .about-container p {
+        text-align: center;
+        margin: 2vw;
+        font-size: clamp(1.2rem, 3vw, 1.5rem); /* Tamaño de texto adaptable entre 1.2rem y 1.5rem */
+        line-height: 1.5;
+    }
+
+    button#inicio-btn {
+        width: 90%; /* Haz que el botón ocupe casi todo el ancho */
+        bottom: 5vw;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        padding: 4vw;
+    }
+
+    nav ul {
+        flex-direction: column; /* Cambia la orientación a columna */
+    }
+
+    nav li {
+        margin: 3vw 0;
+    }
+
+    nav a {
+        font-size: clamp(1.2rem, 3vw, 1.5rem); /* Tamaño de fuente adaptable entre 1.2rem y 1.5rem */
+    }
+}
+
+
